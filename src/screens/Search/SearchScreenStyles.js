@@ -38,4 +38,10 @@ export const styles = StyleSheet.create({
     marginBottom: 10,
     marginHorizontal: 10,
   },
+  itemFecha: {
+    marginTop: 5,
+    marginBottom: 10,
+    marginHorizontal: 10,
+    marginLeft: 10,
+  },
 });
