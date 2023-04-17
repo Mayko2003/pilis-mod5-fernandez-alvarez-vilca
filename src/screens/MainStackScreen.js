@@ -1,17 +1,21 @@
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import { HomeScreen } from './home/HomeScreen'
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { HomeScreen } from "./home/HomeScreen";
+import { SearchScreen } from "./Search/SearchScreen";
+import { ProfileScreen } from "./Profile/ProfileScreen";
 
-const Tab = createBottomTabNavigator()
+const Tab = createBottomTabNavigator();
 
 const screenOptions = ({ route }) => {
-    return {}
-}
+  return {};
+};
 
 export const MainStackScreen = () => {
-    return (
-        <Tab.Navigator screenOptions={screenOptions}>
-            {/* AGREGAR RUTAS PARA LAS PANTALLAS */}
-            <Tab.Screen name='Home' component={HomeScreen} />
-        </Tab.Navigator>
-    )
-}
+  return (
+    <Tab.Navigator screenOptions={screenOptions}>
+      {/* AGREGAR RUTAS PARA LAS PANTALLAS */}
+      <Tab.Screen name="Inicio" component={HomeScreen} />
+      <Tab.Screen name="Buscar" component={SearchScreen} />
+      <Tab.Screen name="Usuario" component={ProfileScreen} />
+    </Tab.Navigator>
+  );
+};
