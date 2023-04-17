@@ -10,17 +10,17 @@ import {
 import { styles } from "./SearchScreenStyles";
 import { data } from "../../api/data";
 
-const buscar = ({ item }) => (
-  <Pressable>
-    <View style={styles.itemContainer}>
-      <Image source={item.images} style={styles.itemImage} />
-      <Text style={styles.itemTitle}>{item.title} </Text>
-      <Text style={styles.itemFecha}>{item.fecha} </Text>
-    </View>
-  </Pressable>
-);
+export const SearchScreen = ({ navigation }) => {
+  const buscar = ({ item }) => (
+    <Pressable onPress={() => navigation.navigate("Detalle", { item })}>
+      <View style={styles.itemContainer}>
+        <Image source={item.images} style={styles.itemImage} />
+        <Text style={styles.itemTitle}>{item.title} </Text>
+        <Text style={styles.itemFecha}>{item.fecha} </Text>
+      </View>
+    </Pressable>
+  );
 
-export const SearchScreen = () => {
   return (
     <SafeAreaView styles={styles.container}>
       <FlatList

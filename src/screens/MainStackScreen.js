@@ -4,6 +4,7 @@ import { SearchScreen } from "./Search/SearchScreen";
 import { ProfileScreen } from "./Profile/ProfileScreen";
 import { Entypo } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
+import { LocationScreen } from "./Search/LocationScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -30,7 +31,7 @@ export const MainStackScreen = () => {
     <Tab.Navigator screenOptions={screenOptions}>
       {/* AGREGAR RUTAS PARA LAS PANTALLAS */}
       <Tab.Screen name="Inicio" component={HomeScreen} />
-      <Tab.Screen name="Buscar" component={SearchScreen} />
+      <Tab.Screen name="Buscar" component={LocationScreen} />
       <Tab.Screen name="Perfil" component={ProfileScreen} />
     </Tab.Navigator>
   );
