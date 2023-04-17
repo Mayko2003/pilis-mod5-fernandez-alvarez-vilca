@@ -5,7 +5,7 @@ import {
   SafeAreaView,
   FlatList,
   Pressable,
-  images,
+  image,
 } from "react-native";
 import { styles } from "./SearchScreenStyles";
 import { data } from "../../api/data";
