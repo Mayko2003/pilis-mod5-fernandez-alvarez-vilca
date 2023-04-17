@@ -13,7 +13,7 @@ import { data } from "../../api/data";
 const buscar = ({ item }) => (
   <Pressable>
     <View style={styles.itemContainer}>
-      <Image source={item.images[0]} style={styles.itemImage} />
+      <Image source={item.images} style={styles.itemImage} />
       <Text style={styles.itemTitle}>{item.title} </Text>
       <Text style={styles.itemFecha}>{item.fecha} </Text>
     </View>
