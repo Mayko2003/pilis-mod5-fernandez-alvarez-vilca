@@ -15,7 +15,7 @@ export const UserInfoScreen = () => {
       <View style={styles.header}>
         <Image
           style={styles.profileImage}
-          source={require('../../../assets/images/home.jpg')}
+          source={require('../../../assets/images/user.png')}
         />
         <View style={styles.profileInfo}>
           <Text style={styles.profileName}>{currentUser.username}</Text>
@@ -26,13 +26,13 @@ export const UserInfoScreen = () => {
         </TouchableOpacity>
       </View>
       <View style={styles.content}>
-        <Text style={styles.sectionTitle}>About Me</Text>
+        <Text style={styles.sectionTitle}>Sobre Mi</Text>
         <Text style={styles.sectionText}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
           tellus eu nisi tincidunt ultrices. Morbi id dictum ipsum. Nunc nec
           lacus massa. Integer eget elit non elit sodales maximus.
         </Text>
-        <Text style={styles.sectionTitle}>Interests</Text>
+        <Text style={styles.sectionTitle}>Intereses</Text>
         <Text style={styles.sectionText}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
           tellus eu nisi tincidunt ultrices. Morbi id dictum ipsum. Nunc nec

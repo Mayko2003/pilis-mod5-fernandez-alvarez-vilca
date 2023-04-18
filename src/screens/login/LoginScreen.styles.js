@@ -13,13 +13,14 @@ export const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 16,
-    textAlign: 'center'
+    textAlign: 'center',
+    color: COLORS.orange
   },
   input: {
     height: 40,
     borderColor: '#ccc',
     borderWidth: 1,
-    borderRadius: 20,
+    borderRadius: 5,
     paddingHorizontal: 10,
     marginBottom: 5
   },
@@ -28,10 +29,10 @@ export const styles = StyleSheet.create({
     marginBottom: 8
   },
   button: {
-    backgroundColor: COLORS.primary,
+    backgroundColor: COLORS.orange,
     paddingVertical: 10,
     paddingHorizontal: 20,
-    borderRadius: 20,
+    borderRadius: 5,
     marginTop: 8,
     alignItems: 'center'
   },

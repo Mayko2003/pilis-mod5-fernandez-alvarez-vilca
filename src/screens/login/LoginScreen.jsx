@@ -5,6 +5,8 @@ import { useNavigation } from '@react-navigation/native'
 import { UserContext } from '../../contexts/UserContext'
 import { getUsers } from '../../api/user.service'
 import { styles } from './LoginScreen.styles'
+import { Ionicons } from '@expo/vector-icons';
+import { COLORS } from '../../utils/theme'
 
 
 export const LoginScreen = () => {
@@ -23,7 +25,7 @@ export const LoginScreen = () => {
                 const user = users.find((user) => (user.username === username && password === user.password))
                 if (user !== undefined) {
                     setCurrentUser({ username, password })
-                    navigation.navigate('Home')
+                    navigation.navigate('Inicio')
                 }
             })
             .catch(err => console.warn(err))
@@ -31,6 +33,7 @@ export const LoginScreen = () => {
 
     return (
         <View style={styles.container}>
+            <Ionicons name="ios-happy" size={100} alignSelf="center" color={COLORS.orange} />
             <Text style={styles.title}>Inicio de Sesión</Text>
             <Controller
                 control={control}
