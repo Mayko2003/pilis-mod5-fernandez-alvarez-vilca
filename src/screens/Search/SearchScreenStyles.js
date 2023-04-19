@@ -9,7 +9,8 @@ export const styles = StyleSheet.create({
   },
   itemContainer: {
     flex: 1,
-    width: Dimensions.get("screen").width - 20,
+    marginLeft: 10,
+    marginRight: 10,
     borderRadius: 20,
     overflow: "hidden",
     marginBottom: 10,
@@ -20,8 +21,8 @@ export const styles = StyleSheet.create({
     shadowOpacity: 0.2,
     shadowRadius: 2,
   },
-  listItem: {
-    padding: 10,
+  itemList: {
+    marginBottom: 60,
   },
   itemImage: {
     height: 200,
