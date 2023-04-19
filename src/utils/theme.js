@@ -5,6 +5,8 @@ export const COLORS = {
   inactive: "#A0A0A0",
   white: "#FFFFFF",
   grey: "#F1F1F1",
+  blue: "#1861de",
+  orange: "#de6118"
 };
 
 export const SPACING = {

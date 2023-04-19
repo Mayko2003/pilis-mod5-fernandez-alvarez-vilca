@@ -1,0 +1,44 @@
+import { StatusBar, StyleSheet } from 'react-native'
+import { COLORS } from '../../utils/theme'
+
+
+export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 16,
+    backgroundColor: '#fff',
+    marginTop: StatusBar.currentHeight
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 16,
+    textAlign: 'center',
+    color: COLORS.orange
+  },
+  input: {
+    height: 40,
+    borderColor: '#ccc',
+    borderWidth: 1,
+    borderRadius: 5,
+    paddingHorizontal: 10,
+    marginBottom: 5
+  },
+  errorText: {
+    color: 'red',
+    marginBottom: 8
+  },
+  button: {
+    backgroundColor: COLORS.orange,
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 5,
+    marginTop: 8,
+    alignItems: 'center'
+  },
+  buttonText: {
+    color: '#fff',
+    fontSize: 18,
+    fontWeight: 'bold'
+  }
+})
